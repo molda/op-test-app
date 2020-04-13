@@ -19,7 +19,7 @@ var autosyncrunning = 0;
 var autosyncpending = [];
 
 // Registers a file route
-FILE('/openplatform.json', function(req, res) {
+FILE((CONF.default_root || '/') + 'openplatform.json', function(req, res) {
 	res.file(PATH.root('openplatform.json'));
 });
 
