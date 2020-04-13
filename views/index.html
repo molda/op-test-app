@@ -9,9 +9,9 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="robots" content="all,follow" />
-	<link href="@{'%cdn'}/spa.min@18.css" rel="stylesheet" />
-	<script src="@{'%cdn'}/spa.min@18.js"></script>
-	<script src="@{'%cdn'}/openplatform.min@4.js"></script>
+	<link href="https://cdn.componentator.com/spa.min@18.css" rel="stylesheet" />
+	<script src="https://cdn.componentator.com/spa.min@18.js"></script>
+	<script src="https://cdn.componentator.com/openplatform.min@4.js"></script>
 	@{import('meta', 'head', 'default.js', 'default.css', 'favicon.ico')}
 </head>
 <body data---="exec" data-bind="common.ready__invisible:!value" class="invisible">
@@ -62,7 +62,7 @@
 		</section>
 	</div>
 
-	<div data---="importer__common.panel__if:userform;url:/forms/user.html;cleaner:10"></div>
+	<div data---="importer__common.panel__if:userform;url:{#}/forms/user.html;cleaner:10"></div>
 
 	@{json(user.json(), 'userdata')}
 
